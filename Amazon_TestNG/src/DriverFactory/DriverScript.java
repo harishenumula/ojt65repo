@@ -41,6 +41,13 @@ public class DriverScript {
 							FunctionLibrary.typeAction(driver, locator_type, locator_value, testdata);
 						} else if (oject_type.equalsIgnoreCase("ClickAction")) {
 							FunctionLibrary.clickAction(driver, locator_type, locator_value);
+						} else if (oject_type.equalsIgnoreCase("filter")) {
+							FunctionLibrary.filter(driver, locator_type, locator_value, testdata);
+						} else if (oject_type.equalsIgnoreCase("changeDriverFocus")) {
+							FunctionLibrary.changeDriverFocus(driver);
+						} //
+						else if (oject_type.equalsIgnoreCase("selectAction")) {
+							FunctionLibrary.selectAction(driver, locator_type, locator_value, testdata);
 						}
 						step_status = "pass";
 						testcase_status = "true";

@@ -22,7 +22,7 @@ public class ExcelFileUtil {
 	Workbook book;
 
 	public ExcelFileUtil() throws Throwable, Throwable, IOException {
-		FileInputStream fi = new FileInputStream("E:\\Selenium\\Amazon_TestNG\\TestInput\\Inputs.xlsx");
+		FileInputStream fi = new FileInputStream("C:\\Users\\mounika\\git\\ojt65\\Amazon_TestNG\\TestInput\\Inputs.xlsx");
 		book = WorkbookFactory.create(fi);
 	}
 
@@ -73,7 +73,7 @@ public class ExcelFileUtil {
 			style.setFont(font);
 			row1.getCell(col).setCellStyle(style);
 		}
-		FileOutputStream fos = new FileOutputStream("E:\\Selenium\\Amazon_TestNG\\TestOutput\\Inputs.xlsx");
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\mounika\\git\\ojt65\\Amazon_TestNG\\TestOutput\\Inputs.xlsx");
 		book.write(fos);
 		fos.close();
 	}
