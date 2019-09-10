@@ -10,13 +10,14 @@ import org.testng.annotations.Test;
 import CommonFunLibrary.FunctionLibrary;
 import Utilities.ExcelFileUtil;
 
-public class DriverScript {
+public class DriverScript1 {
 	WebDriver driver;
 	String step_status;
 	String testcase_status;
 
 	@Test
 	public void start_Test() throws Throwable, Throwable {
+		System.out.println("test");
 		ExcelFileUtil xls = new ExcelFileUtil();
 		int no_test_cases = xls.getrowCount("Dashboard");
 		for (int i = 1; i <= no_test_cases; i++) {
