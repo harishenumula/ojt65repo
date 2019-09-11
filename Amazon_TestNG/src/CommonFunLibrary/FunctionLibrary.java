@@ -110,6 +110,7 @@ public class FunctionLibrary {
 	public static void waitforelement(WebDriver driver, String locator_type, String locator_value, String TestData) {
 		int timeToWait = (int) Double.parseDouble(TestData);
 		System.out.println(timeToWait);
+		System.out.println();
 		WebDriverWait wait = new WebDriverWait(driver, timeToWait);
 
 		if (locator_type.equalsIgnoreCase("id")) {
